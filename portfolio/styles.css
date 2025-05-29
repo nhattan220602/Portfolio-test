@@ -191,6 +191,15 @@ nav ul li a:hover {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 1rem;
+    cursor: pointer;
+
+    transition: background-color 0.3s,
+                transform 0.3s;
+}
+.skill-item:hover {
+    background-color: #2d5570;
+    transform: scale(1.2);
+
 }
 
 footer {
