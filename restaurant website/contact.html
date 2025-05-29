@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ContactUs</title>
+</head>
+<body>
+    <div id="ContactUs">
+        <h1>Contact</h1>
+        <form action="#">
+            <div class="form-shape">
+                <label for="query">
+                    Type of Query
+                </label>
+                <select name="myQuery" id="query">
+                    <option value="sel" selected>Select</option>
+                    <option value="ord">Order</option>
+                    <option value="site">Site related Issues</option>
+                    <option value="fed">Complaint related Issues</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-shape">
+                <label for="name">Name</label>
+                <input type="text" name="myName" id="name"
+                    placeholder="Enter your name..."> 
+            </div>
+            <div class="form-shape">
+                <label for="email">Email</label>
+                <input type="text" name="myEmail" id="email"
+                    placeholder="Enter your email">
+            </div>
+            <div class="form-shape">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="myPhone" id="phone"
+                    placeholder="Enter your PhoneNumber">
+            </div>
+            
+            <div id="radio">
+                <p>Are you a member of OnlineFoodShop?</p>
+                <label>
+                    <input type="radio" name="eligible" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="eligible" value="no"> No
+                </label>
+            </div>
+
+            <div class="form-shape">
+                <label for="message">Ellaborate your query</label>
+                <textarea name="mesg" id="messgae" cols="30" rows='10'></textarea>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

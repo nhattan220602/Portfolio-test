@@ -1,0 +1,556 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#top {
+    color: red;
+    text-align: center;
+    font-size: 45px;
+    font-family: monospace;
+}
+
+#top1 {
+    text-align: center;
+    color: black;
+    font-size: 21px;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+#nav-bar img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 14vh;
+    width: 100vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#nav-content {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+ul li a {
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: border-radius 0.3s, background-color 0.3s;
+}
+
+ul li a:hover {
+    background-color: red;
+    border-radius: 10px;
+    transform: scale(1.05); /* Fixed typo: 0.105 → 1.05 */
+}
+
+#container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 63vh;
+}
+
+#container1::before {
+    content: '';
+    background: url("https://media.geeksforgeeks.org/wp-content/uploads/20240711124309/8513909_3941598-(2).jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-right: 45px;
+    z-index: -1;
+    opacity: 0.89;
+    border: 2px solid black;
+    border-bottom-left-radius: 100px;
+}
+
+#row1 {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.btn {
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 3px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-out, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#container3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#row2 {
+    width: 24vw;
+    height: 21vh;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5); /* Fixed invalid rgba */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 38px;
+    border-radius: 40px;
+    transition: transform 0.3s ease-out;
+}
+
+#row2:hover {
+    transform: scale(1.05);
+}
+
+#row2::before {
+    content: '';
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151336570.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24vw;
+    height: 21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+#row3 {
+    position: relative;
+    width: 24vw;
+    height: 21vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.5); /* Fixed invalid box-shadow */
+    margin-top: 51px;
+    margin-bottom: 51px;
+    margin-left: 38px;
+    border-radius: 40px;
+    transition: transform 0.3s ease-out;
+}
+
+#row3:hover {
+    transform: scale(1.05);
+}
+
+#row3::before {
+    content: '';
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123256/jpeg-optimizer_6656747_21351.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24vw;
+    height: 21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+#top3 {
+    text-align: center;
+    color: red;
+    font-family: monospace;
+}
+
+#container4 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 41px auto;
+}
+
+#row4 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123258/jpeg-optimizer_various-meals-western-food-platter-dark-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    transition: transform 0.3s ease-out;
+}
+
+#row4:hover {
+    transform: scale(1.05);
+}
+
+#row5 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123257/jpeg-optimizer_2151182491.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    transition: transform 0.3s ease-out;
+}
+
+#row5:hover {
+    transform: scale(1.05);
+}
+
+#row6 {
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background: url('https://media.geeksforgeeks.org/wp-content/uploads/20240711123255/jpeg-optimizer_4744.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 15px;
+    transition: transform 0.3s ease-out;
+}
+
+#row6:hover {
+    transform: scale(1.05);
+}
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    #top {
+        font-size: 36px;
+    }
+
+    #top1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #nav-bar {
+        height: 12vh;
+    }
+
+    #nav-bar img {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul li {
+        margin: 10px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    #container1 {
+        height: 50vh;
+    }
+
+    #container1::before {
+        height: 40vh;
+        border-bottom-left-radius: 50px;
+    }
+
+    #row1 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 2px 4px;
+    }
+
+    #container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #row2, #row3 {
+        width: 80vw;
+        height: 18vh;
+        margin: 20px 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #row2::before, #row3::before {
+        width: 80vw;
+        height: 18vh;
+    }
+
+    #container4 {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #row4, #row5, #row6 {
+        width: 80vw;
+        height: 300px;
+        margin: 20px 0;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 600px) {
+    #top {
+        font-size: 28px;
+    }
+
+    #top1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    #nav-bar {
+        height: 10vh;
+    }
+
+    #nav-bar img {
+        width: 35px;
+        height: 35px;
+    }
+
+    ul li {
+        margin: 8px;
+    }
+
+    ul li a {
+        font-size: 12px;
+    }
+
+    #container1 {
+        height: 40vh;
+    }
+
+    #container1::before {
+        height: 30vh;
+        border-bottom-left-radius: 30px;
+    }
+
+    #row1 {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 2px 3px;
+    }
+
+    #container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #row2, #row3 {
+        width: 90vw;
+        height: 15vh;
+        margin: 15px 0;
+    }
+
+    #row2::before, #row3::before {
+        width: 90vw;
+        height: 15vh;
+    }
+
+    #container4 {
+        margin: 15px;
+    }
+
+    #row4, #row5, #row6 {
+        width: 90vw;
+        height: 250px;
+        margin: 15px 0;
+    }
+
+    #top3 {
+        font-size: 18px;
+    }
+}
+
+/*FOR CONTACT */
+
+/* General container styling */
+#ContactUs {
+    max-width: 600px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Heading styling */
+#ContactUs h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.form-shape {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.form-shape label {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-shape select,
+.form-shape input[type="text"],
+.form-shape input[type="email"],
+.form-shape input[type="tel"],
+.form-shape textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-shape select:focus,
+.form-shape input:focus,
+.form-shape textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Textarea specific styling */
+.form-shape textarea {
+    resize: vertical; /* Allow vertical resize only */
+    min-height: 100px;
+}
+
+/* Radio button section */
+#radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between question and radio buttons */
+    font-size: 1.1em;
+    color: #333;
+}
+
+#radio p {
+    margin: 0;
+    font-weight: 500;
+}
+
+#radio label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between radio button and text */
+    cursor: pointer;
+}
+
+#radio input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #007bff; /* Match form's blue theme */
+    cursor: pointer;
+}
+
+#radio input[type="radio"]:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Submit and Reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+input[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+@media (max-width: 600px) {
+    #ContactUs {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    #ContactUs h1 {
+        font-size: 1.5em;
+    }
+
+    .form-shape select,
+    .form-shape input,
+    .form-shape textarea {
+        font-size: 0.9em;
+    }
+
+    #radio {
+        font-size: 1em;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+
+
